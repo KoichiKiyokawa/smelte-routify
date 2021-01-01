@@ -1,14 +1,15 @@
-<script lang="ts">
+<script>
   import Nav from 'src/components/organisms/Nav.svelte'
-  import LoginForm from 'src/components/templates/LoginForm.svelte'
+  import { Router } from '@roxi/routify'
+  import { routes } from '../.routify/routes'
 </script>
 
-<style>
-  @import 'smelte/src/tailwind.css';
+<style lang="sass">
+  @import 'smelte/src/tailwind.css'
 </style>
 
 <Nav />
 
-<main class="mt-16">
-  <LoginForm />
+<main class="mt-20">
+  <Router {routes} />
 </main>

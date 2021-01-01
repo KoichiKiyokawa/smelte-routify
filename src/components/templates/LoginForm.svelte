@@ -11,29 +11,27 @@
   }
 </script>
 
-<div class="max-w-screen-sm mx-auto">
-  <form on:submit|preventDefault={onSubmit}>
-    <Card.Card class="p-4 mt-4 w-full">
-      <div slot="title">
-        <Card.Title title="Login" />
-      </div>
+<form on:submit|preventDefault={onSubmit} class="max-w-screen-sm mx-auto">
+  <Card.Card class="p-4 w-full">
+    <div slot="title">
+      <Card.Title title="Login" />
+    </div>
 
-      <div slot="text">
-        <TextField
-          bind:value={email}
-          label="email"
-          type="email"
-          autoComplete="email" />
-        <TextField
-          bind:value={password}
-          label="password"
-          type="password"
-          autoComplete="current-password" />
-      </div>
+    <div slot="text">
+      <TextField
+        bind:value={email}
+        label="email"
+        type="email"
+        autoComplete="email" />
+      <TextField
+        bind:value={password}
+        label="password"
+        type="password"
+        autoComplete="current-password" />
+    </div>
 
-      <div slot="actions">
-        <Button>Login</Button>
-      </div>
-    </Card.Card>
-  </form>
-</div>
+    <div slot="actions">
+      <Button>Login</Button>
+    </div>
+  </Card.Card>
+</form>
