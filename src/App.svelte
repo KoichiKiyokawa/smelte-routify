@@ -1,11 +1,14 @@
 <script lang="ts">
-  import 'smelte/src/tailwind.css'
-
   import Nav from 'src/components/organisms/Nav.svelte'
+  import LoginForm from 'src/components/templates/LoginForm.svelte'
 </script>
 
-<main>
-  <header>
-    <Nav />
-  </header>
+<style>
+  @import 'smelte/src/tailwind.css';
+</style>
+
+<Nav />
+
+<main class="mt-16">
+  <LoginForm />
 </main>

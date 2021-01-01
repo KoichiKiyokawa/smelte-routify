@@ -3,5 +3,7 @@
 </script>
 
 <AppBar>
-  <h1>Smelte App</h1>
+  <nav class="p-4">
+    <h1 class="text-white text-xl">Smelte App</h1>
+  </nav>
 </AppBar>

@@ -53,6 +53,10 @@ export default {
         dev: !production
       }
     }),
+    smelte({
+      purge: production,
+      output: 'public/build/tailwind.css'
+    }),
     // we'll extract any component CSS out into
     // a separate file - better for performance
     css({ output: 'bundle.css' }),
@@ -70,10 +74,6 @@ export default {
     typescript({
       sourceMap: !production,
       inlineSources: !production
-    }),
-    smelte({
-      purge: production,
-      output: "public/global.css"
     }),
 
     // In dev mode, call `npm run start` once
