@@ -7,7 +7,7 @@
   let password: string
 
   function onSubmit() {
-    alert('submit')
+    alert(JSON.stringify({ email, password }))
   }
 </script>
 

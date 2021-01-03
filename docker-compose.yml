@@ -1,0 +1,13 @@
+version: '3'
+services:
+  front:
+    working_dir: /app
+    image: node:12.20.0-alpine
+    volumes:
+      - .:/app
+    ports:
+      - 5000:5000
+      - 35729:35729
+    command: yarn dev
+    environment:
+      - HOST=0.0.0.0
